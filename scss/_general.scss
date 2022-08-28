@@ -10,18 +10,22 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;
   font-family: "Open Sans", "Poppins", "Arial", "sans-serif";
   margin: 0;
   padding: 0;
   font-weight: 400;
-	overflow-x: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.site-main{
+.site-main {
   flex-grow: 1;
 }
 
@@ -48,6 +52,7 @@ body {
   0% {
     width: 100%;
   }
+
   50% {
     width: 75%;
   }
@@ -57,6 +62,7 @@ body {
   0% {
     width: 75%;
   }
+
   50% {
     width: 100%;
   }

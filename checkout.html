@@ -1,716 +1,959 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Checkout</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="header__hight">
-        <div class="container">
-          <div class="header__top row justify-content-between pt-2">
-            <div class="top__left col-12 col-md-9 col-lg-5">
-              <ul
-                class="left-list list-unstyled d-flex justify-content-center justify-content-lg-start flex-wrap"
-              >
-                <li class="left__item me-3">
-                  <a
-                    class="left__link text-decoration-none text-success"
-                    href="#"
-                  >
-                    Chat with us
-                  </a>
-                </li>
 
-                <li class="left__item me-3">
-                  <a
-                    class="left__link text-decoration-none text-dark"
-                    href="tel:+420336775664"
-                  >
-                    +420 336 775 664
-                  </a>
-                </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Checkout</title>
+</head>
 
-                <li class="left__item">
-                  <a
-                    class="left__link text-decoration-none text-dark"
-                    href="mailto:info@freshnesecom.com"
-                  >
-                    info@freshnesecom.com
-                  </a>
-                </li>
-              </ul>
-            </div>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header__hight">
+      <div class="container">
+        <div class="header__top row justify-content-between pt-2">
+          <div class="top__left col-12 col-md-9 col-lg-5">
+            <ul class="left-list list-unstyled d-flex justify-content-center justify-content-lg-start flex-wrap">
+              <li class="left__item me-3">
+                <a class="left__link text-decoration-none text-success" href="#">
+                  Chat with us
+                </a>
+              </li>
 
-            <div class="top__right col-12 col-md-3 col-lg-3">
-              <ul
-                class="right-list list-unstyled d-flex justify-content-center justify-content-lg-end"
-              >
-                <li class="right__item me-3">
-                  <a
-                    class="right__link text-decoration-none text-success"
-                    href="#"
-                  >
-                    Blog
-                  </a>
-                </li>
+              <li class="left__item me-3">
+                <a class="left__link text-decoration-none text-dark" href="tel:+420336775664">
+                  +420 336 775 664
+                </a>
+              </li>
 
-                <li class="right__item me-3">
-                  <a
-                    class="right__link text-decoration-none text-success"
-                    href="#"
-                  >
-                    About Us
-                  </a>
-                </li>
-
-                <li class="right__item">
-                  <a
-                    class="right__link text-decoration-none text-success"
-                    href="#"
-                  >
-                    Careers
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="left__item">
+                <a class="left__link text-decoration-none text-dark" href="mailto:info@freshnesecom.com">
+                  info@freshnesecom.com
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div
-            class="header__middle row align-items-center mt-3 mb-3 mb-lg-5 mt-lg-5 justify-content-between"
-          >
-            <a
-              class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-3 me-md-3"
-              href="./index.html"
-            >
-              <img src="./images/logo.svg" alt="site logo" />
+          <div class="top__right col-12 col-md-3 col-lg-3">
+            <ul class="right-list list-unstyled d-flex justify-content-center justify-content-lg-end">
+              <li class="right__item me-3">
+                <a class="right__link text-decoration-none text-success" href="#">
+                  Blog
+                </a>
+              </li>
+
+              <li class="right__item me-3">
+                <a class="right__link text-decoration-none text-success" href="#">
+                  About Us
+                </a>
+              </li>
+
+              <li class="right__item">
+                <a class="right__link text-decoration-none text-success" href="#">
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__middle row align-items-center mt-3 mb-3 mb-lg-5 mt-lg-5 justify-content-between">
+          <a class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-3 me-md-3" href="./index.html">
+            <img src="./images/logo.svg" alt="site logo" />
+          </a>
+
+          <form class="col-12 col-sm-2 d-flex home-form align-items-center position-relative"
+            action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+            <div class="navbar-item dropdown">
+              <a class="nav-link fw-bold dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                All categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            <input class="form__input w-75 pe-4" type="search" name="your_search"
+              placeholder="Search Products, categories ..." />
+          </form>
+
+          <div class="icon__wrap col-12 col-lg-2 d-flex justify-content-center justify-content-xl-end mt-3 mt-lg-0">
+            <a class="icon__link me-5" href="#">
+              <img src="./images/man.svg" alt="man" width="25" height="25" />
             </a>
 
-            <form
-              class="col-12 col-sm-2 d-flex home-form align-items-center position-relative"
-              action="https://echo.htmlacademy.ru/courses"
-              method="POST"
-              autocomplete="off"
-            >
-              <div class="navbar-item dropdown">
-                <a
-                  class="nav-link fw-bold dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  All categories
+            <button class="icon__btn position-relative">
+              <img src="./images/wood.svg" alt="wood" width="25" height="25" />
+              <span class="position-absolute top-100 start-0 translate-middle badge rounded-pill bg-danger">
+                4
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+
+            <nav class="addition bg-white position-fixed top-0 bottom-0">
+              <div class="container">
+                <div class="addition__top pb-3">
+                  <div class="addition__top d-flex justify-content-between align-items-center mt-4 mb-4">
+                    <h3 class="h3 shop__title align-self-center">
+                      Shopping cart
+                    </h3>
+
+                    <button class="addition__btn mb-1">Close</button>
+                  </div>
+
+                  <div class="product row">
+                    <div class="col-4">
+                      <img class="product__img img-fluid" src="./images/food.jpg" alt="product" />
+                    </div>
+
+                    <div class="col">
+                      <span class="product__title"> Product title </span>
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="mini__title"> Farm: </span>
+                        </div>
+                        <div class="col">
+                          <span class="mini__text ms-1">
+                            Tharamis Farm:
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="mini__title"> Freshness: </span>
+                        </div>
+                        <div class="col">
+                          <span class="mini__text ms-1"> 1 day old </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <span class="extra__title"> Wishlist </span>
+                    </div>
+                    <div class="col d-flex">
+                      <img src="./images/stars.svg" alt="stars" />
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <span class="extra__title extra__title--one">
+                        Compare
+                      </span>
+                    </div>
+                    <div class="col d-flex">
+                      <span class="text-success fw-bold"> 36.99 USD </span>
+                    </div>
+                  </div>
+
+                  <div class="row mt-1">
+                    <div class="col-4">
+                      <span class="extra__title extra__title--two">
+                        Remove
+                      </span>
+                    </div>
+                    <div class="col d-flex">
+                      <span class="grey-text fw-bold"> 48.56 USD </span>
+                    </div>
+
+                    <div class="col-4">
+                      <div class="result d-flex align-items-center">
+                        <span class="result__title"> 1 pcs </span>
+                        <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle product__drop" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pcs
+                          </a>
+                          <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdown">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="addition__down pt-3">
+                  <div class="product row">
+                    <div class="col-4">
+                      <img class="product__img img-fluid" src="./images/food.jpg" alt="product" />
+                    </div>
+
+                    <div class="col">
+                      <span class="product__title"> Product title </span>
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="mini__title"> Farm: </span>
+                        </div>
+                        <div class="col">
+                          <span class="mini__text ms-1">
+                            Tharamis Farm:
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="mini__title"> Freshness: </span>
+                        </div>
+                        <div class="col">
+                          <span class="mini__text ms-1"> 1 day old </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <span class="extra__title"> Wishlist </span>
+                    </div>
+                    <div class="col d-flex">
+                      <img src="./images/stars.svg" alt="stars" />
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <span class="extra__title extra__title--one">
+                        Compare
+                      </span>
+                    </div>
+                    <div class="col d-flex">
+                      <span class="text-success fw-bold"> 36.99 USD </span>
+                    </div>
+                  </div>
+
+                  <div class="row mt-1">
+                    <div class="col-4">
+                      <span class="extra__title extra__title--two">
+                        Remove
+                      </span>
+                    </div>
+                    <div class="col d-flex">
+                      <span class="grey-text fw-bold"> 48.56 USD </span>
+                    </div>
+
+                    <div class="col-4">
+                      <div class="result d-flex align-items-center">
+                        <span class="result__title"> 1 pcs </span>
+                        <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle product__drop" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pcs
+                          </a>
+                          <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdown">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="addition__bottom">
+                  <div class="row prise__small pb-3">
+                    <span class="col-12"> Subtotal </span>
+                    <span class="col prise__big"> 73.98 USD </span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
+                    <span class="down__title"> Continue shopping </span>
+
+                    <button type="button last__button" class="btn btn-success">
+                      Go to Checkout
+                    </button>
+                  </div>
+                </div>
+
+                <div class="addition__bot pt-3">
+                  <div class="row prise__small pb-3">
+                    <span class="col-12"> Subtotal </span>
+                    <span class="col prise__big"> 73.98 USD </span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
+                    <span class="down__title"> Continue shopping </span>
+
+                    <button type="button last__button" class="btn btn-success">
+                      Go to Checkout
+                    </button>
+                  </div>
+                </div>
+
+                <div class="addition__bot pt-3">
+                  <div class="row prise__small pb-3">
+                    <span class="col-12"> Subtotal </span>
+                    <span class="col prise__big"> 73.98 USD </span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center pt-3 pb-3">
+                    <span class="down__title"> Continue shopping </span>
+
+                    <button type="button last__button" class="btn btn-success">
+                      Go to Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="down__list mt-4 mt-sm-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-11">
+            <ul class="nav__list down__list list-unstyled d-flex justify-content-between flex-wrap pt-3 pb-3">
+              <li class="nav-item me3 dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Bakery
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Fruit and vegetables
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Meat and fish
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Drinks
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Kitchen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Special nutrition
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Baby
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pharmacy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="last__list list-unstyled d-flex flex-wrap">
+        <li class="last__item last__item--one">
+          <a class="last__link" href="./index.html"> Homepage </a>
+        </li>
+        <li class="last__item">
+          <a class="last__link last__item--active" href="./index.html">
+            Checkout page
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- site Main -->
+  <main class="site-main">
+    <section class="checkout-hero">
+      <div class="containerr">
+        <div class="checkout-hero-inner align-items-start">
+          <div class="checkout-hero-start me-5">
+            <div class="checkout-hero-top d-flex align-items-end justify-content-between">
+              <div>
+                <h3 class="checkout-hero-title">Billing info</h3>
+
+                <p class="checkout-hero-text">Please enter your billing info</p>
               </div>
 
-              <input
-                class="form__input w-75 pe-4"
-                type="search"
-                name="your_search"
-                placeholder="Search Products, categories ..."
-              />
-            </form>
+              <span class="checkout-hero-top-span d-lg-inline-block">Step 1 of 5</span>
+            </div>
 
-            <div
-              class="icon__wrap col-12 col-lg-2 d-flex justify-content-center justify-content-xl-end mt-3 mt-lg-0"
-            >
-              <a class="icon__link me-5" href="#">
-                <img src="./images/man.svg" alt="man" width="25" height="25" />
-              </a>
+            <form class="checkout-hero-form" action="https://echo.htmlacademy.ru/courses" method="post"
+              autocomplete="off">
+              <div class="d-flex justify-content-between checkout-form-inner-box">
+                <div class="checkout-form-start">
+                  <label for="first-name" class="form-label checkout-form-label">First name</label>
+                  <input type="text" name="user_name" class="form-control checkout-form-input" id="first-name"
+                    placeholder="First name" required>
 
-              <button class="icon__btn position-relative">
-                <img
-                  src="./images/wood.svg"
-                  alt="wood"
-                  width="25"
-                  height="25"
-                />
-                <span
-                  class="position-absolute top-100 start-0 translate-middle badge rounded-pill bg-danger"
-                >
-                  4
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>
+                  <label for="email" class="form-label checkout-form-label">Email address</label>
+                  <input type="email" name="user_email" class="form-control checkout-form-input" id="email"
+                    placeholder="Email addess" required>
 
-              <nav class="addition bg-white position-fixed top-0 bottom-0">
-                <div class="container">
-                  <div class="addition__top pb-3">
-                    <div
-                      class="addition__top d-flex justify-content-between align-items-center mt-4 mb-4"
-                    >
-                      <h3 class="h3 shop__title align-self-center">
-                        Shopping cart
-                      </h3>
+                  <label for="address" class="form-label checkout-form-label">Address</label>
+                  <input type="text" name="user_address" class="form-control checkout-form-input" id="address"
+                    placeholder="Adress" required>
 
-                      <button class="addition__btn mb-1">Close</button>
-                    </div>
+                  <label for="country" class="form-label checkout-form-label">State / Country</label>
+                  <input type="search" name="user_country" class="form-control checkout-form-input" id="country"
+                    placeholder="Choose a state or Country" required>
 
-                    <div class="product row">
-                      <div class="col-4">
-                        <img
-                          class="product__img img-fluid"
-                          src="./images/food.jpg"
-                          alt="product"
-                        />
-                      </div>
+                  <div class="form-check border checkout-form-input-check">
+                    <input class="form-check-input" name="user_different_address" type="checkbox" value=""
+                      id="different">
+                    <label class="form-check-label" for="different">
+                      Ship to a different address?
+                    </label>
+                  </div>
+                </div>
 
-                      <div class="col">
-                        <span class="product__title"> Product title </span>
-                        <div class="row">
-                          <div class="col-4">
-                            <span class="mini__title"> Farm: </span>
-                          </div>
-                          <div class="col">
-                            <span class="mini__text ms-1">
-                              Tharamis Farm:
-                            </span>
-                          </div>
-                        </div>
+                <div class="checkout-form-end p-0 zip-input">
+                  <label for="last-name" class="form-label checkout-form-label">Last name</label>
+                  <input type="text" name="user_last_name" class="form-control checkout-form-input" id="last-name"
+                    placeholder="Last name" required>
 
-                        <div class="row">
-                          <div class="col-4">
-                            <span class="mini__title"> Freshness: </span>
-                          </div>
-                          <div class="col">
-                            <span class="mini__text ms-1"> 1 day old </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <label for="phone-number" class="form-label checkout-form-label">Phone number</label>
+                  <input type="tel" name="user_phone_number" class="form-control checkout-form-input" id="phone-number"
+                    placeholder="Phone number" required>
 
-                    <div class="row mt-2">
-                      <div class="col-4">
-                        <span class="extra__title"> Wishlist </span>
-                      </div>
-                      <div class="col d-flex">
-                        <img src="./images/stars.svg" alt="stars" />
-                      </div>
-                    </div>
+                  <label for="town" class="form-label checkout-form-label">Town / City</label>
+                  <input type="text" name="user_town" class="form-control checkout-form-input" id="town"
+                    placeholder="Town or city" required>
 
-                    <div class="row mt-2">
-                      <div class="col-4">
-                        <span class="extra__title extra__title--one">
-                          Compare
-                        </span>
-                      </div>
-                      <div class="col d-flex">
-                        <span class="text-success fw-bold"> 36.99 USD </span>
-                      </div>
-                    </div>
+                  <label for="zip" class="form-label checkout-form-label">ZIP/Postal code</label>
+                  <input type="search" name="user_zip" class="form-control checkout-form-input mb-0 zip-input" id="zip"
+                    placeholder="Postal code or ZIP" required>
+                </div>
+              </div>
 
-                    <div class="row mt-1">
-                      <div class="col-4">
-                        <span class="extra__title extra__title--two">
-                          Remove
-                        </span>
-                      </div>
-                      <div class="col d-flex">
-                        <span class="grey-text fw-bold"> 48.56 USD </span>
-                      </div>
+              <div class="checkout-hero-top d-flex align-items-end justify-content-between">
+                <div>
+                  <h3 class="checkout-hero-title">Billing method</h3>
 
-                      <div class="col-4">
-                        <div class="result d-flex align-items-center">
-                          <span class="result__title"> 1 pcs </span>
-                          <div class="nav-item dropdown">
-                            <a
-                              class="nav-link dropdown-toggle product__drop"
-                              href="#"
-                              id="navbarDropdown"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              Pcs
-                            </a>
-                            <ul
-                              class="dropdown-menu list-unstyled"
-                              aria-labelledby="navbarDropdown"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Another action</a
-                                >
-                              </li>
-                              <li><hr class="dropdown-divider" /></li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Something else here</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <p class="checkout-hero-text">Please enter your payment method</p>
+                </div>
+
+                <span class="checkout-hero-top-span d-lg-inline-block">Step 2 of 5</span>
+              </div>
+
+              <div class="form-check p-0 mb-3">
+                <label
+                  class="form-check-label border d-flex align-items-center justify-content-between checkout-hero-form-label-box">
+                  <span class="d-flex align-items-end">
+                    <input class="form-check-input" type="radio" name="payment_method" value="FedEx">
+
+                    <span class="payment-method-span">FedEx</span>
+                  </span>
+
+                  <span class="pe-5">
+                    <span class="payment-method-price">+32 USD</span>
+                    <span class="payment-method-price-text">Additional price</span>
+                  </span>
+                  <img class="dhl-fedx-img-first" src="images/fedex-icon.svg" width="54" height="16"
+                    alt="fedx company icon">
+                </label>
+              </div>
+
+              <div class="form-check p-0">
+                <label
+                  class="form-check-label border d-flex align-items-center justify-content-between checkout-hero-form-label-box checkout-hero-form-label-box-bottom">
+                  <span class="d-flex align-items-end">
+                    <input class="form-check-input" type="radio" name="payment_method" value="FedEx">
+
+                    <span class="payment-method-span">DHL</span>
+                  </span>
+
+                  <span class="pe-2">
+                    <span class="payment-method-price">+15 USD</span>
+                    <span class="payment-method-price-text">Additional price</span>
+                  </span>
+                  <img class="dhl-fedx-img-second" src="images/dhl-icon.svg" width="93" height="14"
+                    alt="fedx company icon">
+                </label>
+              </div>
+
+              <div class="checkout-hero-top d-flex align-items-end justify-content-between">
+                <div>
+                  <h3 class="checkout-hero-title">Payment method</h3>
+
+                  <p class="checkout-hero-text">Please enter your payment method</p>
+                </div>
+
+                <span class="checkout-hero-top-span d-lg-inline-block">Step 3 of 5</span>
+              </div>
+
+              <div class="payment-method border">
+                <div class="form-check payment-method-wrapper">
+                  <label class="form-check-label d-flex align-items-center justify-content-between">
+                    <span class="d-flex align-items-center">
+                      <input class="form-check-input" type="radio" name="payment_method_bottom">
+
+                      <span class="payment-method-span mt-1">Credit card</span>
+                    </span>
+
+                    <img src="images/visa-icon.svg" width="94" height="20" alt="fedx company icon">
+                  </label>
+                </div>
+
+                <label for="card-number" class="form-label checkout-form-label">Card number</label>
+                <input type="text" class="form-control checkout-form-input" id="card-number" placeholder="Card number"
+                  required>
+
+                <div class="payment-method-bottom d-flex justify-content-between">
+                  <div>
+                    <label for="card-holder" class="form-label checkout-form-label">Card holder</label>
+                    <input type="text" class="form-control card-holder-input checkout-form-input mb-0 me-2"
+                      id="card-holder" placeholder="Card holder" required>
                   </div>
 
-                  <div class="addition__down pt-3">
-                    <div class="product row">
-                      <div class="col-4">
-                        <img
-                          class="product__img img-fluid"
-                          src="./images/food.jpg"
-                          alt="product"
-                        />
-                      </div>
-
-                      <div class="col">
-                        <span class="product__title"> Product title </span>
-                        <div class="row">
-                          <div class="col-4">
-                            <span class="mini__title"> Farm: </span>
-                          </div>
-                          <div class="col">
-                            <span class="mini__text ms-1">
-                              Tharamis Farm:
-                            </span>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-4">
-                            <span class="mini__title"> Freshness: </span>
-                          </div>
-                          <div class="col">
-                            <span class="mini__text ms-1"> 1 day old </span>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="d-flex">
+                    <div>
+                      <label for="date" class="form-label checkout-form-label expiration-label">Expiration date</label>
+                      <input type="text" class="form-control card-date checkout-form-input me-2 mb-0" id="date"
+                        placeholder="DD/MM/YY" required>
                     </div>
 
-                    <div class="row mt-2">
-                      <div class="col-4">
-                        <span class="extra__title"> Wishlist </span>
-                      </div>
-                      <div class="col d-flex">
-                        <img src="./images/stars.svg" alt="stars" />
-                      </div>
-                    </div>
-
-                    <div class="row mt-2">
-                      <div class="col-4">
-                        <span class="extra__title extra__title--one">
-                          Compare
-                        </span>
-                      </div>
-                      <div class="col d-flex">
-                        <span class="text-success fw-bold"> 36.99 USD </span>
-                      </div>
-                    </div>
-
-                    <div class="row mt-1">
-                      <div class="col-4">
-                        <span class="extra__title extra__title--two">
-                          Remove
-                        </span>
-                      </div>
-                      <div class="col d-flex">
-                        <span class="grey-text fw-bold"> 48.56 USD </span>
-                      </div>
-
-                      <div class="col-4">
-                        <div class="result d-flex align-items-center">
-                          <span class="result__title"> 1 pcs </span>
-                          <div class="nav-item dropdown">
-                            <a
-                              class="nav-link dropdown-toggle product__drop"
-                              href="#"
-                              id="navbarDropdown"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              Pcs
-                            </a>
-                            <ul
-                              class="dropdown-menu list-unstyled"
-                              aria-labelledby="navbarDropdown"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Another action</a
-                                >
-                              </li>
-                              <li><hr class="dropdown-divider" /></li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Something else here</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="addition__bottom">
-                    <div class="row prise__small pb-3">
-                      <span class="col-12"> Subtotal </span>
-                      <span class="col prise__big"> 73.98 USD </span>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center pt-3 pb-3"
-                    >
-                      <span class="down__title"> Continue shopping </span>
-
-                      <button
-                        type="button last__button"
-                        class="btn btn-success"
-                      >
-                        Go to Checkout
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="addition__bot pt-3">
-                    <div class="row prise__small pb-3">
-                      <span class="col-12"> Subtotal </span>
-                      <span class="col prise__big"> 73.98 USD </span>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center pt-3 pb-3"
-                    >
-                      <span class="down__title"> Continue shopping </span>
-
-                      <button
-                        type="button last__button"
-                        class="btn btn-success"
-                      >
-                        Go to Checkout
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="addition__bot pt-3">
-                    <div class="row prise__small pb-3">
-                      <span class="col-12"> Subtotal </span>
-                      <span class="col prise__big"> 73.98 USD </span>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center pt-3 pb-3"
-                    >
-                      <span class="down__title"> Continue shopping </span>
-
-                      <button
-                        type="button last__button"
-                        class="btn btn-success"
-                      >
-                        Go to Checkout
-                      </button>
+                    <div>
+                      <label for="cvc" class="form-label checkout-form-label expiration-label">CVC</label>
+                      <input type="text" class="form-control card-date checkout-form-input mb-0" id="cvc"
+                        placeholder="CVC" required>
                     </div>
                   </div>
                 </div>
-              </nav>
+              </div>
+
+              <div class="form-check p-0">
+                <label
+                  class="form-check-label form-check-label-paypal border d-flex align-items-center justify-content-between checkout-hero-form-label-box checkout-hero-form-label-box-bottom">
+                  <span class="d-flex align-items-end">
+                    <input class="form-check-input" type="radio" name="payment_method_bottom" value="FedEx">
+
+                    <span class="payment-method-span">PayPal</span>
+                  </span>
+
+                  <img src="images/paypal-icon.svg" width="76" height="18" alt="fedx company icon">
+                </label>
+              </div>
+
+              <div class="form-check p-0">
+                <label
+                  class="form-check-label border d-flex align-items-center justify-content-between checkout-hero-form-label-box checkout-hero-form-label-box-bottom">
+                  <span class="d-flex align-items-end">
+                    <input class="form-check-input" type="radio" name="payment_method_bottom" value="Bitcoin">
+
+                    <span class="payment-method-span">Bitcoin</span>
+                  </span>
+
+                  <img src="images/bitcoin-icon.svg" width="75" height="16" alt="fedx company icon">
+                </label>
+              </div>
+
+              <div class="checkout-hero-top d-flex align-items-end justify-content-between">
+                <div>
+                  <h3 class="checkout-hero-title">Additional informations</h3>
+
+                  <p class="checkout-hero-text">Need something else? We will make it for you!</p>
+                </div>
+
+                <span class="checkout-hero-top-span d-lg-inline-block">Step 4 of 5</span>
+              </div>
+
+              <div class="mb-3 p-0">
+                <label for="order-notes" class="form-label checkout-form-label">Order notes</label>
+                <textarea class="form-control checkout-form-input rounded-3 order-notes-input pt-3" id="order-notes"
+                  rows="3" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+              </div>
+
+              <div class="checkout-hero-top d-flex align-items-end justify-content-between">
+                <div class="confirmation-title-test-box">
+                  <h3 class="checkout-hero-title">Confirmation</h3>
+
+                  <p class="checkout-hero-text">We are getting to the end. Just few clicks and your order si ready!</p>
+                </div>
+
+                <span class="checkout-hero-top-span d-lg-inline-block">Step 5 of 5</span>
+              </div>
+
+              <div class="form-check border checkout-form-input-check mb-3 i-agree-chackbox">
+                <input class="form-check-input" type="checkbox" value="" id="agree" required>
+                <label class="form-check-label" for="agree">
+                  I agree with sending an Marketing and newsletter emails. No spam, promissed!
+                </label>
+              </div>
+
+              <div class="d-flex flex-column align-items-start p-0">
+                <div class="form-check border checkout-form-input-check agree-box i-agree-with-checkbox d-block">
+                  <input class="form-check-input" type="checkbox" value="" id="privacy-policy" required>
+                  <label class="form-check-label" for="privacy-policy">
+                    I agree with our terms and conditions and privacy policy.
+                  </label>
+                </div>
+
+                <button class="product-btn btn btn-outline-success coplete-order d-block" type="submit">Complete
+                  order</button>
+              </div>
+
+
+              <h3 class="all-your-date-title ">All your data are safe</h3>
+
+            </form>
+            <div class="getting-text-box">
+              <p class="checkout-hero-text">We are using the most advanced security to provide you the best experience
+                ever.</p>
             </div>
+            <p class="copy-right-text">
+              Copyright © 2020 Freshnesecom
+            </p>
           </div>
+
+
+          <article class="checkout-hero-article border">
+            <h3 class="checkout-hero-title">Order Summary</h3>
+
+            <p class="checkout-hero-text">Price can change depending on shipping method and taxes of your state.</p>
+
+            <div class="product-order-box mb-0">
+              <div class="product-order-top-box">
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-3" src="images/product-title-box-img-first.png" width="100" height="67" alt="food">
+
+                  <div>
+                    <h4 class="product-order-heading">Product title</h4>
+                    <p class="product-order-desc"><span class="product-order-desc-span me-5">Farm:</span> Tharamis Farm
+                    </p>
+
+                    <p class="product-order-desc"><span
+                        class="product-order-desc-span product-order-desc-span-freshness">Freshness:</span> 1 day old
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="wishlist-wrapper">
+                    <button class=" details-like-text-product-order ps-0">Wishlist</button>
+
+                    <button class="details-like-text-product-order ps-0">Compare</button>
+
+                    <button class="details-like-text-product-order ps-0">Compare</button>
+                  </div>
+
+                  <div class="product-order-stars-wrapper">
+                    <ul
+                      class="detail-star-list list-unstyled d-flex justify-content-between align-items-center product-order-star-list">
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+                    </ul>
+
+                    <div class="details-pirice-wrapper d-flex flex-column">
+                      <div class="d-flex flex-column">
+                        <ins class="text-decoration-none product-price">36.99 USD</ins>
+                        <del class="product-price-bottom">48.56 USD</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="details-price-count border mt-auto product-price-count">
+                    <span class="details-price-count-span border-end pe-1 me-1">1pcs </span>
+                    <select class="details-select border-0 d-inline-block">
+                      <option>Pcs</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-order-box">
+              <div class="product-order-top-box">
+                <div class="d-flex align-items-center mb-2">
+                  <img class="me-3" src="images/product-title-box-img-first.png" width="100" height="67" alt="food">
+
+                  <div>
+                    <h4 class="product-order-heading">Product title</h4>
+                    <p class="product-order-desc"><span class="product-order-desc-span me-5">Farm:</span> Tharamis Farm
+                    </p>
+
+                    <p class="product-order-desc"><span
+                        class="product-order-desc-span product-order-desc-span-freshness">Freshness:</span> 1 day old
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="wishlist-wrapper">
+                    <button class=" details-like-text-product-order ps-0">Wishlist</button>
+
+                    <button class="details-like-text-product-order ps-0">Compare</button>
+
+                    <button class="details-like-text-product-order ps-0">Compare</button>
+                  </div>
+
+                  <div class="product-order-stars-wrapper">
+                    <ul
+                      class="detail-star-list list-unstyled d-flex justify-content-between align-items-center product-order-star-list">
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+
+                      <li class="detail-star-item">
+                        <span class="detail-star-span product-star-span"></span>
+                      </li>
+                    </ul>
+
+                    <div class="details-pirice-wrapper d-flex flex-column">
+                      <div>
+                        <ins class="text-decoration-none product-price">36.99 USD</ins>
+                        <br>
+                        <del class="product-price-bottom">48.56 USD</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="details-price-count border mt-auto product-price-count">
+                    <span class="details-price-count-span border-end pe-1 me-1">1pcs </span>
+                    <select class="details-select border-0 d-inline-block">
+                      <option>Pcs</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-unstyled m-order-total-list">
+              <li class="d-flex justify-content-between align-items-center m-order-total-item">
+                <span class="m-order-total-span">
+                  Subtotal
+                </span>
+
+                <span class="m-order-total-span">
+                  73.98 USD
+                </span>
+              </li>
+
+              <li class="d-flex justify-content-between align-items-center m-order-total-item">
+                <span class="m-order-total-span">
+                  Tax
+                </span>
+
+                <span class="m-order-total-span">
+                  17% 16.53 USD
+                </span>
+              </li>
+
+              <li class="d-flex justify-content-between align-items-center m-order-total-item">
+                <span class="m-order-total-span">
+                  Shipping
+                </span>
+
+                <span class="m-order-total-span">
+                  0 USD
+                </span>
+              </li>
+            </ul>
+
+            <label class="apply-label form-control d-flex align-items-center justify-content-between">
+              <input class="apply-input " type="text" name="user_promo_code" placeholder="Apply promo code" required>
+              <span class="apply-span">Apply now</span>
+            </label>
+
+            <div class="d-flex align-items-center justify-content-between total-order-bottom-box">
+              <div>
+                <p class="total-order-text">Total Order</p>
+
+                <p class="date-text">
+                  Guaranteed delivery day: June 12, 2020
+                </p>
+              </div>
+
+              <span class="order-last-price">89.84 USD</span>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+  </main>
 
-      <nav class="down__list mt-4 mt-sm-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-11">
-              <ul
-                class="nav__list down__list list-unstyled d-flex justify-content-between flex-wrap pt-3 pb-3"
-              >
-                <li class="nav-item me3 dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Bakery
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Fruit and vegetables
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Meat and fish
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Drinks
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Kitchen
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Special nutrition
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Baby
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pharmacy
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <ul class="last__list list-unstyled d-flex flex-wrap">
-          <li class="last__item last__item--one">
-            <a class="last__link" href="./index.html"> Homepage </a>
-          </li>
-          <li class="last__item">
-            <a class="last__link last__item--active" href="./index.html">
-              Checkout page
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <!-- site Main -->
-    <main class="site-main"></main>
-
-    <!-- Footer -->
-    <footer class="footer pt-4">
-      <div class="container">
-        <strong class="footer__title"> Product tags </strong>
-        <ul class="footer__list list-unstyled d-flex flex-wrap mb-5">
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Beans </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Carrots </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Apples </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Garlic </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Mushrooms </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Tomatoes </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Chilli peppers </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Broccoli </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Watermelons </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Oranges </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Bananas </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Grapes </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Cherries </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Meat </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Seo tag </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Fish </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Seo tag </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Fresh food </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#"> Lemons </a>
-          </li>
-        </ul>
-        <p class="footer__epic">Copyright © 2020 petrbilek.com</p>
-      </div>
-    </footer>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
 </html>

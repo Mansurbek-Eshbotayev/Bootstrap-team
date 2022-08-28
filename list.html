@@ -640,8 +640,369 @@
       </div>
     </header>
 
-    <!-- site Main -->
-    <main class="site-main"></main>
+     <!-- MAIN START -->
+  <main>
+    <!-- SECTION START -->
+    <section class="fruit">
+      <div class="container">
+        <div class="row g-0 justify-content-between align-items-center mb-3">
+          <div class="col">
+            <h2 class="fruit-big-title">Fruit and vegetables</h2>
+          </div>
+          <div class="col">
+            <ul class="fruit-list">
+              <li class="fruit-item">
+                <a class="fruit-list-link" href="./index.html">Grid view</a>
+              </li>
+              <li class="fruit-item">
+                <a class="fruit-list-link" href="./list.html">List view</a>
+              </li>
+              <li class="fruit-item">
+                <a class="fruit-list-link" href="./index.html">Products</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="mb-5" method="post" action="https://echo.htmlacademy.ru/courses" autocomplete="off">
+          <div class="row">
+            <div class="col-xl-3 col-md-5 mb-3">
+              <div class="fruit-label-box">
+                <label class="form-label">
+                  <input class="fruit-box-radio" name="choose_text" type="radio" required>
+                  Filtre text
+                </label>
+                <label class="form-label">
+                  <input class="fruit-box-radio" checked name="choose_text" type="radio" required>
+                  Filtre text
+                </label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-4 mb-3">
+              <div class="fruit-label-box">
+                <label class="form-label">
+                  <input class="fruit-box-checkbox" type="checkbox" name="choose__checkbox">
+                  Filtre
+                  <span class="fruit-label-tiny-nbm">nbm</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-5 mb-3">
+              <div class="fruit-label-box">
+                <label class="form-label">
+                  <input class="fruit-box-checkbox" type="checkbox" name="choose__checkbox">
+                  Filtre
+                  <span class="fruit-label-tiny-nbm">nbm</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-5 mb-3">
+              <div class="fruit-label-box">
+                <label class="form-label">
+                  <input class="fruit-box-checkbox" type="checkbox" name="choose__checkbox">
+                  Filtre
+                  <span class="fruit-label-tiny-nbm">nbm</span>
+                </label>
+                <select class="fruit-select" name="choose_select" aria-label="Choose your select" required>
+                  <option value selected disabled>Select</option>
+                  <option value="Apelsin">Apelsin</option>
+                  <option value="Peach">Peach</option>
+                  <option value="Melon">Melon</option>
+                  <option value="Cherry">Cherry</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="select-box">
+            <p class="select-box-text">Applied filtres:</p>
+            <a class="select-box-link" href="#">Selected Filtre</a>
+            <a class="select-box-link" href="#">Selected Filtre</a>
+          </div>
+        </form>
+        <div class="row mb-5 g-0">
+          <div class="col-lg-4 col-xl-3">
+            <form method="post" action="https://echo.htmlacademy.ru/courses" autocomplete="off">
+              <div class="categories-box mb-5">
+                <h3 class="categories-title">Categories</h3>
+                <ul>
+                  <li class="categories-item">
+                    <p class="categories-text">Category name</p>
+                    <span class="categories-tiny">320</span>
+                  </li>
+                  <li class="categories-item">
+                    <p class="categories-text">Category name</p>
+                    <span class="categories-tiny">112</span>
+                  </li>
+                  <li class="categories-item">
+                    <p class="categories-text">Category name</p>
+                    <span class="categories-tiny">32</span>
+                  </li>
+                  <li class="categories-item">
+                    <p class="categories-text">Category name</p>
+                    <span class="categories-tiny">48</span>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="brands-title">Brands</h3>
+              <label class="form-label">
+                <input type="checkbox" name="brand_item1">
+                Filtre by brand item
+              </label>
+              <label class="form-label">
+                <input type="checkbox" checked name="brand_item2">
+                Filtre by brand item
+              </label>
+              <label class="form-label">
+                <input type="checkbox" checked name="brand_item3">
+                Filtre by brand item
+              </label>
+              <label class="form-label">
+                <input type="checkbox" name="brand_item4">
+                Filtre by brand item
+              </label>
+              <label class="form-label mb-5">
+                <input type="checkbox" name="brand_item5">
+                Filtre by brand item
+              </label>
+              <h3 class="rating-title">Rating</h3>
+              <label class="form-label form-label--active mb-3">
+                <input type="checkbox" name="user_stars1">
+                <img src="./images/stars-5.svg" width="88" height="16" alt="Stars">
+              </label>
+              <label class="form-label form-label--active mb-3">
+                <input type="checkbox" name="user_stars2">
+                <img src="./images/stars-4.svg" width="88" height="16" alt="Stars">
+              </label>
+              <label class="form-label form-label--active mb-3">
+                <input type="checkbox" name="user_stars3">
+                <img src="./images/stars-3.svg" width="88" height="16" alt="Stars">
+              </label>
+              <label class="form-label form-label--active mb-3">
+                <input type="checkbox" name="user_stars4">
+                <img src="./images/stars-2.svg" width="88" height="16" alt="Stars">
+              </label>
+              <label class="form-label form-label--active mb-5">
+                <input type="checkbox" name="user_stars5">
+                <img src="./images/star-1.svg" width="88" height="16" alt="Stars">
+              </label>
+              <h3 class="rating-title">Price</h3>
+              <label>
+                <input type="range" name="user_range">
+              </label>
+              <div class="range-wrap mb-4">
+                <div class="range-box me-3">
+                  <p class="range-text m-0">Min</p>
+                  <span class="range-tiny">0</span>
+                </div>
+                <div class="range-box">
+                  <p class="range-text m-0">Max</p>
+                  <span class="range-tiny">000</span>
+                </div>
+              </div>
+              <button class="form-btn-s" type="submit">Apply</button>
+              <button class="form-btn-r" type="reset">Reset</button>
+            </form>
+          </div>
+          <div class="col-lg-8 g-0 col-xl-9 mt-3 product-wrap" id="list">
+            <ul class="row justify-content-between product-list">
+              <li class="col-3 product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3  product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3  product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3  product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3  product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3  product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3 product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3 product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+              <li class="col-3 product-list-item g-0 mb-4">
+                <div class="mb-3">
+                  <img class="product-img" src="./images/photo.png " width="236" height="180" alt="Photo">
+                </div>
+                <div>
+                  <h3 class="product-title">Product title</h3>
+                  <p class="product-text mb-2">Space for a small product description</p>
+                  <img class="mb-4" src="./images/stars-1.svg" width="108" height="20" alt="Stars">
+                </div>
+                <div class="d-flex justify-content-between align-items-center product-boxing">
+                  <div>
+                    <strong class="d-block product-boxing-strong">36.99 USD</strong>
+                  <del class="product-boxing-del m-0">48.56</del>
+                  </div>
+                  <button class="product-boxes-btn" type="button">Buy now</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-5 page-wrap">
+          <div class="mb-3">
+            <div class="page-box">
+              <p class="page-text">Page:</p>
+              <ol class="page-list">
+                <li>
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li>
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li>
+                  <a class="page-link page-link-active" href="#">3</a>
+                </li>
+                <li>
+                  <a class="page-link" href="#">4</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-success dropdown-toggle page-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                Show more products
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div> 
+          </div>
+          <div>
+            <span class="page-tiny">336</span>
+            <p class="d-inline-block page-text">Products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION START -->
+    <!-- MAIN END -->
 
     <!-- Footer -->
     <footer class="footer pt-4">

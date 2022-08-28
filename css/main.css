@@ -105,7 +105,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -373,20 +374,39 @@ body {
 
 .body-side {
   width: 100%;
-  animation-name: squareX;
-  animation-duration: 1.5s;
-  animation-iteration-count: none;
-  animation-direction: 5s;
-  animation-timing-function: ease;
+  -webkit-animation-name: squareX;
+          animation-name: squareX;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+  -webkit-animation-direction: 5s;
+          animation-direction: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .body-side__active {
   width: 75%;
-  animation-name: square;
-  animation-duration: 1.5s;
-  animation-iteration-count: none;
-  animation-direction: 5s;
-  animation-timing-function: ease;
+  -webkit-animation-name: square;
+          animation-name: square;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+  -webkit-animation-direction: 5s;
+          animation-direction: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes square {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 75%;
+  }
 }
 
 @keyframes square {
@@ -395,6 +415,14 @@ body {
   }
   50% {
     width: 75%;
+  }
+}
+@-webkit-keyframes squareX {
+  0% {
+    width: 75%;
+  }
+  50% {
+    width: 100%;
   }
 }
 @keyframes squareX {
@@ -432,6 +460,13 @@ ul {
 }
 
 .container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.containerz {
+  width: 100%;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -492,6 +527,26 @@ ul {
   display: inline-block;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+.form__input::-moz-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a9a9a9;
+  outline: none;
 }
 
 .form__input::placeholder {
@@ -669,7 +724,8 @@ ul {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
   color: #a9a9a9;
 }
 
@@ -881,7 +937,8 @@ ul {
   font-size: 12px;
   line-height: 18px;
   color: #A9A9A9;
-  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 
 .img__text {
@@ -1764,6 +1821,20 @@ td {
   width: 100%;
   background-color: #F9F9F9;
 }
+.checkout-form-input::-moz-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+.checkout-form-input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
 .checkout-form-input::placeholder {
   font-family: "Open Sans";
   font-weight: 400;
@@ -1954,7 +2025,8 @@ td {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
   color: #A9A9A9;
 }
 
@@ -2194,6 +2266,12 @@ td {
   .details-select {
     font-size: 10px;
   }
+  .apply-input::-moz-placeholder {
+    font-size: 10px;
+  }
+  .apply-input:-ms-input-placeholder {
+    font-size: 10px;
+  }
   .apply-input::placeholder {
     font-size: 10px;
   }
@@ -2281,7 +2359,13 @@ td {
 }
 
 [type=radio] {
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
   appearance: none;
+
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -2490,7 +2574,12 @@ td {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+
   text-decoration-line: line-through;
+
   color: #A9A9A9;
 }
 

@@ -441,6 +441,13 @@ hr {
   margin: 0;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2352,9 +2359,13 @@ td {
 }
 
 [type=radio] {
+
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+
+  appearance: none;
+
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -2563,8 +2574,12 @@ td {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+
+  text-decoration-line: line-through;
+
   color: #A9A9A9;
 }
 

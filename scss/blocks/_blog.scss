@@ -1,0 +1,444 @@
+.p-title-p-hero-box-grid-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.p-title-p-hero-box-list {
+  display: none;
+}
+
+.p-title-p-hero-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #151515;
+}
+
+.p-title-p-hero-list {
+  display: flex;
+  align-items: center;
+}
+
+.p-title-p-hero-items {
+  &:not(:last-child) {
+     margin-right: 25px;
+  }
+
+  &:not(:last-child) .p-title-p-hero-link::before {
+     display: inline-block;
+     width: 14px;
+     height: 14px;
+     margin-right: 5px;
+     background-image: url("../images/grid.svg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     content: "";
+  }
+
+  &:nth-child(2) .p-title-p-hero-link::before {
+     background-image: url("../images/list.svg");
+  }
+}
+
+.p-title-p-hero-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #A9A9A9;
+}
+
+
+.p-title-p-hero-link-word {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.p-title-p-hero-link-num-count {
+  padding: 1px 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+.color-active {
+  color: #151515;
+}
+
+.p-title-p-list-open .p-title-p-hero-box-grid {
+  display: none;
+}
+
+.p-title-p-list-open .p-title-p-hero-box-list {
+  display: block;
+}
+
+.p-title-hero-food-box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+  padding: 20px 0 24px 24px;
+  background-image: url("../images/big-egg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.p-title-hero-food-box-img-boxcha {
+  width: 7.5%;
+  padding: 1px 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+.p-title-hero-food-box-left-img {
+  display: none;
+}
+
+.p-title-hero-food-box-inside {
+  max-width: 380px;
+}
+
+.p-title-p-hero-food-title {
+  margin-bottom: 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.p-title-hero-food-box-author-time-box {
+  display: flex;
+  align-items: center;
+}
+
+.p-title-p-hero-food-author {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 16px 0 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  &::before {
+     width: 32px;
+     height: 32px;
+     margin-right: 8px;
+     background-image: url("../images/rounded-man.png");
+     background-repeat: no-repeat;
+     content: "";
+  }
+}
+
+.p-title-p-hero-food-author-time {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.p-title-hero-food-box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  padding: 20px 0 24px 24px;
+  background-image: url("../images/meat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.p-title-hero-food-box-right-img {
+  display: none;
+}
+
+.p-title-p-list-open .p-title-hero-food-box-left {
+  background-image: none;
+  background-color: #fde8a2;
+}
+
+.p-title-p-list-open .p-title-hero-food-box-left-img {
+  display: block;
+}
+
+.p-title-p-list-open .p-title-p-hero-food-title {
+  color: #151515;
+}
+
+// .p-title-p-list-open .p-title-hero-food-box-author-time-box {}
+
+.p-title-p-list-open .p-title-p-hero-food-author {
+  color: #151515;
+}
+
+.p-title-p-list-open .p-title-p-hero-food-author-time {
+  color: #151515;
+}
+
+.p-title-p-list-open .p-title-hero-food-box-right {
+  background-image: none;
+  background-color: #ffe9a1;
+}
+
+.p-title-p-list-open .p-title-hero-food-box-right-img {
+  display: block;
+}
+
+.p-title-p-left-last-box {
+  max-width: 270px;
+}
+
+.p-title-p-left-box-links {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+.p-title-p-left-last-box-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.p-title-p-left-last-box-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+.p-title-p-left-last-box-form {
+  position: relative;
+}
+
+.p-title-p-left-last-box-input {
+  width: 100%;
+  padding: 12px 16px 12px 21px;
+  background-color: #F9F9F9;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.p-title-p-left-last-box-button {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  border: none;
+  background-color: transparent;
+}
+
+.p-title-p-right-box-links-box {
+  max-width: 270px;
+}
+
+.p-title-p-right-box-links-box-boxcha {
+  margin-bottom: 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  padding: 0 8px;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+.p-title-p-right-box-links-box-text {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.p-title-p-right-box-links-author {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.p-title-p-right-box-links-time {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.p-title-p-end-page-outside {
+  background-color: #FDFDFD;
+}
+
+.p-title-p-end-page-word {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.p-title-p-end-page-num1 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6A983C;
+}
+
+.p-title-p-end-page-num {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.p-title-p-end-page-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  margin: 20px 0 !important;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  &::after {
+     width: 10px;
+     height: 15px;
+     margin-left: 13px;
+     background-image: url("../images/p-title-p-right-icon.svg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     content: "";
+  }
+}
+
+.p-title-p-end-page-end-word {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.p-title-p-end-page-num-count {
+  right: 18%;
+  padding: 1px 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .p-title-p-hero-box-grid-intro {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .p-title-p-hero-title {
+     font-size: 31px;
+  }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+  .p-title-p-hero-box-grid {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .p-title-p-hero-box-grid-intro {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .p-title-hero-food-box-inside {
+     max-width: 280px;
+  }
+
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 576px) {
+  .p-title-p-hero-box-grid {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .p-title-p-hero-box-grid-intro {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .p-title-hero-food-box-inside {
+     max-width: 350px;
+  }
+
+
+}
+
+@media only screen and (max-width: 420px) {
+  .p-title-p-end-page {
+     display: flex;
+     flex-direction: column;
+  }
+}

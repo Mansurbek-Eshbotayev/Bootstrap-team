@@ -1,3 +1,10 @@
+.containerz{
+    width: 100% !important;
+    max-width: 1210px !important;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .fruit-big-title {
     font-family: "Poppins";
     font-size: 32px;
@@ -20,6 +27,7 @@
 }
 
 .fruit-item {
+    
     &:nth-child(1) .fruit-list-link {
         &::before {
             width: 16px;
@@ -29,10 +37,10 @@
             content: "";
         }
     }
-
+    
     &:nth-child(2) .fruit-list-link {
         color: #A9A9A9;
-
+        
         &::before {
             width: 16px;
             height: 16px;
@@ -41,10 +49,10 @@
             content: "";
         }
     }
-
+    
     &:nth-child(3) .fruit-list-link {
         color: #A9A9A9;
-
+        
         &::before {
             display: block;
             width: 16px;
@@ -91,7 +99,7 @@
     margin-right: 10px;
     border: 1px solid #000;
     border-radius: 50%;
-
+    
     &:checked {
         border: 6px solid #000;
         transition: all 0.3s ease;
@@ -178,7 +186,7 @@
     color: #6A983C;
     background: #F4F8EC;
     border-radius: 12px;
-
+    
     &::after {
         position: absolute;
         top: 5px;
@@ -191,12 +199,19 @@
     }
 }
 
+.product-img-box img {
+    width: 100%;
+     height: auto !important; 
+}
+
+
+
 @media only screen and (max-width: 401px) {
     .select-box {
         width: 300px;
         display: block;
     }
-
+    
     .select-box-link {
         display: inline-block;
     }
@@ -260,8 +275,12 @@
 .product-text{
     margin: 0px 0px 12px 0px;
     font-size: 12px;
-line-height: 16px;
-color: #575757;
+    line-height: 16px;
+    color: #575757;
+}
+
+.product-item{
+    width: 100%;
 }
 .freshness-item {
     width: 232px;
@@ -328,7 +347,7 @@ color: #575757;
     background-color: #6A983C;
     border: 2px solid #46760A;
     border-radius: 12px;
-
+    
     &::after {
         position: absolute;
         bottom: 18px;
@@ -357,7 +376,7 @@ color: #575757;
     background: #F5F5F5;
     border-radius: 12px;
     border-color: transparent;
-
+    
     &::before {
         position: absolute;
         bottom: 12px;
@@ -393,17 +412,17 @@ color: #575757;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
-color: #151515;
+    color: #151515;
 }
 .range-tiny{
     display: inline-block;
     padding: 16px 40px;
     font-size: 14px;
-line-height: 19px;
-color: #A9A9A9;
-background-color: #F9F9F9;
-border: 1px solid #D1D1D1;
-border-radius: 12px;
+    line-height: 19px;
+    color: #A9A9A9;
+    background-color: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
 }
 .form-btn-s,
 .form-btn-r{
@@ -412,16 +431,16 @@ border-radius: 12px;
     font-size: 15px;
     line-height: 22px;
     font-weight: 700;
-color: #FFFFFF;
-background-color: #6A983C;
-border: 2px solid #46760A;
-border-radius: 12px;
+    color: #FFFFFF;
+    background-color: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
 }
 .form-btn-r{
     color: #A9A9A9;
     background-color: #FFFFFF;
     border-color: transparent;
-border-radius: 12px;
+    border-radius: 12px;
 }
 
 // PAGE
@@ -432,8 +451,8 @@ border-radius: 12px;
 .page-link {
     margin: 0px 8px 0px 0px;
     font-size: 12px;
-line-height: 16px;
-color: #A9A9A9;
+    line-height: 16px;
+    color: #A9A9A9;
 }
 .page-list {
     display: flex;
@@ -447,24 +466,24 @@ color: #A9A9A9;
 .page-btn{
     padding: 12px 16px;
     font-family: 'Poppins';
-font-weight: 700;
-font-size: 15px;
-line-height: 22px;
-color: #FFFFFF;
-background-color: #6A983C;
-border: 2px solid #46760A;
-border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
 }
 .page-tiny{
     margin-right: 4px;
     padding: 0px 8px;
     font-family: "Poppins";
-font-weight: 600;
-font-size: 12px;
-line-height: 18px;
-color: #6A983C;
-background-color: #F4F8EC;
-border-radius: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    background-color: #F4F8EC;
+    border-radius: 12px;
 }
 @media only screen and (max-width: 500px){
     .page-wrap{

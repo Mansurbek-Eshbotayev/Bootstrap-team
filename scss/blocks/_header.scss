@@ -1,0 +1,347 @@
+.header__top {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.left__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.right__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.home-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  position: relative;
+  &::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/lupa.svg);
+    background-repeat: no-repeat;
+    top: 10;
+    right: 10px;
+    position: absolute;
+  }
+}
+
+.form__input {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-item {
+  display: flex;
+
+  &::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #d1d1d1;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.icon__link {
+  text-decoration: none;
+}
+
+.icon__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.down__list {
+  background-color: #f9f9f9;
+}
+
+.addition {
+  overflow-y: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  min-height: 740px;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.15);
+  transform: translateX(500px);
+  transition: transform 1.5s ease;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.addition__active {
+  transform: translateX(0);
+}
+
+.addition__btn {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+.shop__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #151515;
+}
+
+.product__img {
+  border-radius: 12px;
+}
+
+.product__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.mini__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.mini__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.extra__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 9px;
+    background-image: url(../images/heard.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.extra__title--one {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 12px;
+    background-image: url(../images/pic.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.extra__title--two {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/min-close.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.grey-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+
+.result__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #d1d1d1;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #d1d1d1;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.product__drop {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.result {
+  min-width: 98px;
+  padding: 7px 7px;
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  position: relative;
+  top: -20px;
+}
+
+.addition__top {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.prise__small {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.prise__big {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #151515;
+}
+
+.addition__bottom {
+  padding-top: 150px;
+}
+
+.last__button {
+  border: 1px solid #46760a;
+}
+
+.last__item--one {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/linebar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}
+
+.last__link {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.last__link--active {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}

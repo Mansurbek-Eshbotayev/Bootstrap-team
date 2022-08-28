@@ -1,0 +1,1137 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff");
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff");
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff");
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff");
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: "Open Sans", "Poppins", "Arial", "sans-serif";
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+.body-side {
+  width: 100%;
+  animation-name: squareX;
+  animation-duration: 1.5s;
+  animation-iteration-count: none;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+.body-side__active {
+  width: 75%;
+  animation-name: square;
+  animation-duration: 1.5s;
+  animation-iteration-count: none;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+@keyframes square {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 75%;
+  }
+}
+@keyframes squareX {
+  0% {
+    width: 75%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+img {
+  vertical-align: middle;
+}
+
+hr {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__top {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.left__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.right__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.home-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+.home-form::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(../images/lupa.svg);
+  background-repeat: no-repeat;
+  top: 10;
+  right: 10px;
+  position: absolute;
+}
+
+.form__input {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-item {
+  display: flex;
+}
+.navbar-item::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #d1d1d1;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a9a9a9;
+  outline: none;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.icon__link {
+  text-decoration: none;
+}
+
+.icon__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.down__list {
+  background-color: #f9f9f9;
+}
+
+.addition {
+  overflow-y: auto;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  min-height: 740px;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.15);
+  transform: translateX(500px);
+  transition: transform 1.5s ease;
+}
+.addition::-webkit-scrollbar {
+  display: none;
+}
+
+.addition__active {
+  transform: translateX(0);
+}
+
+.addition__btn {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.addition__btn::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.shop__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #151515;
+}
+
+.product__img {
+  border-radius: 12px;
+}
+
+.product__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.mini__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.mini__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.extra__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.extra__title::before {
+  content: "";
+  width: 11px;
+  height: 9px;
+  background-image: url(../images/heard.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.extra__title--one {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.extra__title--one::before {
+  content: "";
+  width: 11px;
+  height: 12px;
+  background-image: url(../images/pic.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.extra__title--two {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.extra__title--two::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/min-close.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.grey-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+
+.result__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #d1d1d1;
+  display: flex;
+  align-items: center;
+}
+.result__title::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #d1d1d1;
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.product__drop {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.result {
+  min-width: 98px;
+  padding: 7px 7px;
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  position: relative;
+  top: -20px;
+}
+
+.addition__top {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.prise__small {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.prise__big {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #151515;
+}
+
+.addition__bottom {
+  padding-top: 150px;
+}
+
+.last__button {
+  border: 1px solid #46760a;
+}
+
+.last__item--one {
+  display: flex;
+  align-items: center;
+}
+.last__item--one::after {
+  content: "";
+  width: 6px;
+  height: 11px;
+  background-image: url(../images/linebar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.last__link {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.last__link--active {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.home__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.home__item {
+  margin-bottom: 12px;
+}
+
+.home__btn {
+  background-color: #F5F5F5;
+}
+
+.card-succes {
+  background-image: url(../images/card-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-succes__itle {
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+}
+
+.card-succes__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #151515;
+}
+
+.card-succes__wrap {
+  display: block;
+}
+
+.card-succes {
+  padding: 48px 33px 35px 33px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.card-succes__wrap {
+  margin-top: auto;
+}
+
+.card-succes__btn {
+  width: 100%;
+  max-width: 163px;
+  border: 2px solid #92C064;
+}
+
+.card__button {
+  background-color: transparent;
+  border: none;
+  padding: 6px 12px;
+  background-color: #6A983C;
+  border: 1px solid #48780D;
+  display: inline-block;
+}
+
+.card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+}
+
+.card {
+  max-width: 269px;
+}
+
+.card__plus {
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  text-decoration-line: line-through;
+}
+
+.img__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  padding: 0 5px;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.corusel__list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.corusel__item {
+  width: 100%;
+  max-width: 369px;
+  min-width: 320px;
+  border: 1px solid #F9F9F9;
+  padding: 24px 32px 40px 32px;
+}
+
+.corusel__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #151515;
+}
+
+.corusel__span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+.corusel__img {
+  position: absolute;
+  left: 45%;
+  bottom: -26px;
+  z-index: 10;
+}
+
+.corusel__item {
+  margin-right: 32px;
+}
+
+.corusel__down {
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
+.corusel__down {
+  position: relative;
+}
+
+.slick-prev {
+  width: 80px;
+  height: 50px;
+}
+.slick-prev::before {
+  content: "";
+  width: 32px;
+  height: 48px;
+  background-image: url(../images/btn-one.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.slick-next {
+  width: 80px;
+  height: 50px;
+}
+.slick-next::before {
+  content: "";
+  width: 32px;
+  height: 48px;
+  background-image: url(../images/btn-two.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.post-one {
+  height: 400px;
+  padding: 24px 24px;
+  background-image: url(../images/post-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.img__info {
+  padding: 0 7px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+.post-one__text {
+  margin-top: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.detal__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.picture-min {
+  border-radius: 12px;
+}
+
+.frunt__info {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  padding: 0 7px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+}
+
+.frunt__text {
+  width: 100%;
+  max-width: 267px;
+  margin-bottom: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.frunt__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.last__img {
+  border-radius: 12px;
+}
+
+.lat__info {
+  width: 100%;
+  max-width: 230px;
+}
+
+.last__text {
+  margin-bottom: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.information__title {
+  display: inline-block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.information__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.information__link {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+}
+
+.footer__title {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.footer__item {
+  margin-top: 16px;
+  margin-right: 26px;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  padding: 4px 10px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.footer__epic {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+.lino {
+  width: 400px;
+  height: 200px;
+  background-color: royalblue;
+  margin-right: 20px;
+}/*# sourceMappingURL=main.css.map */

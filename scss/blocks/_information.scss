@@ -1,0 +1,24 @@
+.information__title{
+  display:inline-block;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #151515;
+margin-bottom: 16px;
+}
+
+.information__item:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.information__link{
+  text-decoration: none;
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #6A983C;
+}

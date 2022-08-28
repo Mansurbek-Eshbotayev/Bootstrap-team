@@ -1,14 +1,1503 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   <title>Template</title>
 </head>
 <body>
-
+  <!-- Header -->
+  <header>
+    <div class="header__hight">
+      <div class="container">
+        <div class="header__top row justify-content-between pt-2">
+          <div class="top__left col-12 col-md-9 col-lg-5">
+            <ul
+            class="left-list list-unstyled d-flex justify-content-center justify-content-lg-start flex-wrap"
+            >
+            <li class="left__item me-3">
+              <a
+              class="left__link text-decoration-none text-success"
+              href="#"
+              >
+              Chat with us
+            </a>
+          </li>
+          
+          <li class="left__item me-3">
+            <a
+            class="left__link text-decoration-none text-dark"
+            href="tel:+420336775664"
+            >
+            +420 336 775 664
+          </a>
+        </li>
+        
+        <li class="left__item">
+          <a
+          class="left__link text-decoration-none text-dark"
+          href="mailto:info@freshnesecom.com"
+          >
+          info@freshnesecom.com
+        </a>
+      </li>
+    </ul>
+  </div>
   
+  <div class="top__right col-12 col-md-3 col-lg-3">
+    <ul
+    class="right-list list-unstyled d-flex justify-content-center justify-content-lg-end"
+    >
+    <li class="right__item me-3">
+      <a
+      class="right__link text-decoration-none text-success"
+      href="#"
+      >
+      Blog
+    </a>
+  </li>
+  
+  <li class="right__item me-3">
+    <a
+    class="right__link text-decoration-none text-success"
+    href="#"
+    >
+    About Us
+  </a>
+</li>
+
+<li class="right__item">
+  <a
+  class="right__link text-decoration-none text-success"
+  href="#"
+  >
+  Careers
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div
+class="header__middle row align-items-center mt-3 mb-3 mb-lg-5 mt-lg-5 justify-content-between"
+>
+<a
+class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-3 me-md-3"
+href="./index.html"
+>
+<img src="./images/logo.svg" alt="site logo" />
+</a>
+
+<form
+class="col-12 col-sm-2 d-flex home-form align-items-center position-relative"
+action="https://echo.htmlacademy.ru/courses"
+method="POST"
+autocomplete="off"
+>
+<div class="navbar-item dropdown">
+  <a
+  class="nav-link fw-bold dropdown-toggle"
+  href="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  >
+  All categories
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </li>
+</ul>
+</div>
+
+<input
+class="form__input w-75 pe-4"
+type="search"
+name="your_search"
+placeholder="Search Products, categories ..."
+/>
+</form>
+
+<div
+class="icon__wrap col-12 col-lg-2 d-flex justify-content-center justify-content-xl-end mt-3 mt-lg-0"
+>
+<a class="icon__link me-5" href="#">
+  <img src="./images/man.svg" alt="man" width="25" height="25" />
+</a>
+
+<button class="icon__btn position-relative">
+  <img
+  src="./images/wood.svg"
+  alt="wood"
+  width="25"
+  height="25"
+  />
+  <span
+  class="position-absolute top-100 start-0 translate-middle badge rounded-pill bg-danger"
+  >
+  4
+  <span class="visually-hidden">unread messages</span>
+</span>
+</button>
+
+<nav class="addition bg-white position-fixed top-0 bottom-0">
+  <div class="container">
+    <div class="addition__top pb-3">
+      <div
+      class="addition__top d-flex justify-content-between align-items-center mt-4 mb-4"
+      >
+      <h3 class="h3 shop__title align-self-center">
+        Shopping cart
+      </h3>
+      
+      <button class="addition__btn mb-1">Close</button>
+    </div>
+    
+    <div class="product row">
+      <div class="col-4">
+        <img
+        class="product__img img-fluid"
+        src="./images/food.jpg"
+        alt="product"
+        />
+      </div>
+      
+      <div class="col">
+        <span class="product__title"> Product title </span>
+        <div class="row">
+          <div class="col-4">
+            <span class="mini__title"> Farm: </span>
+          </div>
+          <div class="col">
+            <span class="mini__text ms-1">
+              Tharamis Farm:
+            </span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-4">
+            <span class="mini__title"> Freshness: </span>
+          </div>
+          <div class="col">
+            <span class="mini__text ms-1"> 1 day old </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-2">
+      <div class="col-4">
+        <span class="extra__title"> Wishlist </span>
+      </div>
+      <div class="col d-flex">
+        <img src="./images/stars.svg" alt="stars" />
+      </div>
+    </div>
+    
+    <div class="row mt-2">
+      <div class="col-4">
+        <span class="extra__title extra__title--one">
+          Compare
+        </span>
+      </div>
+      <div class="col d-flex">
+        <span class="text-success fw-bold"> 36.99 USD </span>
+      </div>
+    </div>
+    
+    <div class="row mt-1">
+      <div class="col-4">
+        <span class="extra__title extra__title--two">
+          Remove
+        </span>
+      </div>
+      <div class="col d-flex">
+        <span class="grey-text fw-bold"> 48.56 USD </span>
+      </div>
+      
+      <div class="col-4">
+        <div class="result d-flex align-items-center">
+          <span class="result__title"> 1 pcs </span>
+          <div class="nav-item dropdown">
+            <a
+            class="nav-link dropdown-toggle product__drop"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >
+            Pcs
+          </a>
+          <ul
+          class="dropdown-menu list-unstyled"
+          aria-labelledby="navbarDropdown"
+          >
+          <li>
+            <a class="dropdown-item" href="#">Action</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#"
+            >Another action</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#"
+            >Something else here</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="addition__down pt-3">
+  <div class="product row">
+    <div class="col-4">
+      <img
+      class="product__img img-fluid"
+      src="./images/food.jpg"
+      alt="product"
+      />
+    </div>
+    
+    <div class="col">
+      <span class="product__title"> Product title </span>
+      <div class="row">
+        <div class="col-4">
+          <span class="mini__title"> Farm: </span>
+        </div>
+        <div class="col">
+          <span class="mini__text ms-1">
+            Tharamis Farm:
+          </span>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <span class="mini__title"> Freshness: </span>
+        </div>
+        <div class="col">
+          <span class="mini__text ms-1"> 1 day old </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-2">
+    <div class="col-4">
+      <span class="extra__title"> Wishlist </span>
+    </div>
+    <div class="col d-flex">
+      <img src="./images/stars.svg" alt="stars" />
+    </div>
+  </div>
+  
+  <div class="row mt-2">
+    <div class="col-4">
+      <span class="extra__title extra__title--one">
+        Compare
+      </span>
+    </div>
+    <div class="col d-flex">
+      <span class="text-success fw-bold"> 36.99 USD </span>
+    </div>
+  </div>
+  
+  <div class="row mt-1">
+    <div class="col-4">
+      <span class="extra__title extra__title--two">
+        Remove
+      </span>
+    </div>
+    <div class="col d-flex">
+      <span class="grey-text fw-bold"> 48.56 USD </span>
+    </div>
+    
+    <div class="col-4">
+      <div class="result d-flex align-items-center">
+        <span class="result__title"> 1 pcs </span>
+        <div class="nav-item dropdown">
+          <a
+          class="nav-link dropdown-toggle product__drop"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >
+          Pcs
+        </a>
+        <ul
+        class="dropdown-menu list-unstyled"
+        aria-labelledby="navbarDropdown"
+        >
+        <li>
+          <a class="dropdown-item" href="#">Action</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#"
+          >Another action</a
+          >
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <a class="dropdown-item" href="#"
+          >Something else here</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="addition__bottom">
+  <div class="row prise__small pb-3">
+    <span class="col-12"> Subtotal </span>
+    <span class="col prise__big"> 73.98 USD </span>
+  </div>
+  <div
+  class="d-flex justify-content-between align-items-center pt-3 pb-3"
+  >
+  <span class="down__title"> Continue shopping </span>
+  
+  <button
+  type="button last__button"
+  class="btn btn-success"
+  >
+  Go to Checkout
+</button>
+</div>
+</div>
+
+<div class="addition__bot pt-3">
+  <div class="row prise__small pb-3">
+    <span class="col-12"> Subtotal </span>
+    <span class="col prise__big"> 73.98 USD </span>
+  </div>
+  <div
+  class="d-flex justify-content-between align-items-center pt-3 pb-3"
+  >
+  <span class="down__title"> Continue shopping </span>
+  
+  <button
+  type="button last__button"
+  class="btn btn-success"
+  >
+  Go to Checkout
+</button>
+</div>
+</div>
+
+<div class="addition__bot pt-3">
+  <div class="row prise__small pb-3">
+    <span class="col-12"> Subtotal </span>
+    <span class="col prise__big"> 73.98 USD </span>
+  </div>
+  <div
+  class="d-flex justify-content-between align-items-center pt-3 pb-3"
+  >
+  <span class="down__title"> Continue shopping </span>
+  
+  <button
+  type="button last__button"
+  class="btn btn-success"
+  >
+  Go to Checkout
+</button>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+<nav class="down__list mt-4 mt-sm-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-11">
+        <ul
+        class="nav__list down__list list-unstyled d-flex justify-content-between flex-wrap pt-3 pb-3"
+        >
+        <li class="nav-item me3 dropdown me-3 mb-2 mb-xl-0">
+          <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >
+          Bakery
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Another action</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+        <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        id="navbarDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        >
+        Fruit and vegetables
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li>
+          <a class="dropdown-item" href="#">Another action</a>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+      <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      id="navbarDropdown"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      >
+      Meat and fish
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li>
+        <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li><hr class="dropdown-divider" /></li>
+      <li>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </li>
+    </ul>
+  </li>
+  
+  <li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+    <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="navbarDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    >
+    Drinks
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li>
+      <a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li><hr class="dropdown-divider" /></li>
+    <li>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+  <a
+  class="nav-link dropdown-toggle"
+  href="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  >
+  Kitchen
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li>
+    <a class="dropdown-item" href="#">Another action</a>
+  </li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </li>
+</ul>
+</li>
+
+<li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+  <a
+  class="nav-link dropdown-toggle"
+  href="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  >
+  Special nutrition
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li>
+    <a class="dropdown-item" href="#">Another action</a>
+  </li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </li>
+</ul>
+</li>
+
+<li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+  <a
+  class="nav-link dropdown-toggle"
+  href="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  >
+  Baby
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li>
+    <a class="dropdown-item" href="#">Another action</a>
+  </li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </li>
+</ul>
+</li>
+
+<li class="nav-item dropdown me-3 mb-2 mb-xl-0">
+  <a
+  class="nav-link dropdown-toggle"
+  href="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  >
+  Pharmacy
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li>
+    <a class="dropdown-item" href="#">Another action</a>
+  </li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</header>
+
+<!-- site Main -->
+
+<main class="site-main">
+  <!-- Home section -->
+  <section class="home-hero pt-5 pb-5">
+    <div class="container">
+      <div class="row top-card pb-2 pb-sm-3 pb-md-4 pb-lg-5">
+        
+        <div class="col-md-3">
+          <strong class="home__title mb-2 d-block">
+            Category menu
+          </strong>
+          <ul class="home__list list-unstyled ">
+            <li class="home__item">
+              <a class="home__link text-success" href="#">
+                Bakery
+              </a>
+            </li>
+            <li class="home__item">
+              <a class="home__link text-success" href="#">
+                Fruit and vegetables
+              </a>
+            </li>
+            <li class="home__item">
+              <a class="home__link text-success" href="#">
+                Meat and fish
+              </a>
+            </li>
+            <li class="home__item">
+              <a class="home__link text-success" href="#">
+                Drinks
+              </a>
+            </li>
+            <li class="home__item">
+              <a class="home__link text-success" href="#">
+                Kitchen
+              </a>
+            </li>
+          </ul>
+          
+          <div class="btn-group dropend mt-3">
+            <button type="button " class="btn  dropdown-toggle home__btn" data-bs-toggle="dropdown" aria-expanded="false">
+              More categories
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-4 card-succes mt-3 mt-md-0 ms-md-4 ms-lg-0">
+          <span class="card-succes__itle mb-2">
+            Banner subfocus
+          </span>
+          <strong class="card-succes__text">
+            Space for heading
+          </strong>
+          
+          <div class="btn-group dropend card-succes__wrap">
+            <button type="button" class="btn card-succes__btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+              Read recepies
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-4 card-succes mt-3 mt-md-0 ms-md-4 ">
+          <span class="card-succes__itle mb-2">
+            Banner subfocus
+          </span>
+          <strong class="card-succes__text">
+            Space for heading
+          </strong>
+          
+          <div class="btn-group dropend card-succes__wrap">
+            <button type="button" class="btn card-succes__btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+              Read recepies
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="row down-card pt-2 pt-sm-3 pt-md-4 pt-lg-5">
+        <div class="col d-flex justify-content-between flex-wrap">
+          <div class=" mb-3 mb-md-0 ">
+            <strong class="home__title mb-2 d-block">
+              Best selling products
+            </strong>
+            <ul class="home__list list-unstyled ">
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Kitchen
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Meat and fish
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Special nutrition
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Pharmacy
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Baby
+                </a>
+              </li>
+            </ul>
+            
+            <div class="btn-group dropend mt-3">
+              <button type="button " class="btn  dropdown-toggle home__btn" data-bs-toggle="dropdown" aria-expanded="false">
+                More categories
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 ms-0 ms-md-5  mb-2 mb-sm-1 ">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="p-2">
+                <img src="https://picsum.photos/id/444/200/130" class="card-img-top " alt="...">
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    1.48 USD
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 mb-2 mb-sm-1 ">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="p-2 position-relative">
+                <img src="https://picsum.photos/id/44/200/130" class="card-img-top " alt="...">
+                <span class="img__text">- 36 %</span>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    0.28 USD
+                    <span class="card__plus">48.56</span>
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 mb-2 mb-sm-1  me-lg-3 me-xxl-5">
+            <div class="card h-100" style="width: 25rem;">
+              <div class="p-2 position-relative">
+                <img src="https://picsum.photos/id/234/200/130" class="card-img-top " alt="...">
+                <span class="img__text">- 36 %</span>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    1.12 USD
+                    <span class="card__plus">48.56</span>
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row down-card pt-2 pt-sm-3 pt-md-4 pt-lg-5">
+        <div class="col d-flex justify-content-between flex-wrap">
+          <div class=" mb-3 mb-md-0 ">
+            <strong class="home__title mb-2 d-block">
+              Best from Farmers
+            </strong>
+            <ul class="home__list list-unstyled ">
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Carrots
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Tomatoes
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Potatoes
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Chicken
+                </a>
+              </li>
+              <li class="home__item">
+                <a class="home__link text-success" href="#">
+                  Pork
+                </a>
+              </li>
+            </ul>
+            
+            <div class="btn-group dropend mt-3">
+              <button type="button " class="btn  dropdown-toggle home__btn" data-bs-toggle="dropdown" aria-expanded="false">
+                More categories
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 ms-0 ms-md-5  mb-2 mb-sm-1 ">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="p-2">
+                <img src="https://picsum.photos/id/474/200/130" class="card-img-top " alt="...">
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    1.48 USD
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 mb-2 mb-sm-1 ">
+            <div class="card h-100" style="width: 18rem;">
+              <div class="p-2 position-relative">
+                <img src="https://picsum.photos/id/166/200/130" class="card-img-top " alt="...">
+                <span class="img__text">- 36 %</span>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    0.28 USD
+                    <span class="card__plus">48.56</span>
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mini-card ms-2 ms-sm-0 mb-2 mb-sm-1  me-lg-3 me-xxl-5">
+            <div class="card h-100" style="width: 25rem;">
+              <div class="p-2 position-relative">
+                <img src="https://picsum.photos/id/295/200/130" class="card-img-top " alt="...">
+                <span class="img__text">- 36 %</span>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Product Title</h5>
+                <p class="card-text">Space for a small product description </p>
+                <div class="card__wrap d-flex  align-items-center justify-content-between">
+                  <span class="card__price fw-bold">
+                    1.12 USD
+                    <span class="card__plus">48.56</span>
+                  </span>
+                  <button type="button" class="btn btn-success card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- carusel -->
+
+ <section class="carousel ">
+  <div class="carousel__top mb-4">
+    <div class="container ">
+      <div class="d-flex justify-content-between align-items-center">
+        <strong class="carousel__title">
+          Our customers says
+        </strong>
+        
+        <div class="btn-group dropend">
+          <button type="button" class="btn  dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+            Button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action two</a></li>
+            <li><a class="dropdown-item" href="#">Action three</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="corusel__down overflow-hidden pb-5">
+    
+
+    <div class="corusel__list  list-unstyled d-flex">
+     
+      <div class="corusel__item position-relative">
+        <p class="corusel__text mb-3 text-center">
+          “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+        </p>
+        <span class="corusel__span text-center d-block">
+          Name and Surname
+        </span>
+        <img class="corusel__img text-center" src="./images/pic-one.png" alt="person">
+      </div>
+      
+      <div class="corusel__item position-relative">
+        <p class="corusel__text mb-3 text-center">
+          “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+        </p>
+        <span class="corusel__span text-center d-block">
+          Name and Surname
+        </span>
+        <img class="corusel__img text-center" src="./images/pic-two.png" alt="person">
+      </div>
+      
+      <div class="corusel__item position-relative">
+        <p class="corusel__text mb-3 text-center">
+          “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+        </p>
+        <span class="corusel__span text-center d-block">
+          Name and Surname
+        </span>
+        <img class="corusel__img text-center" src="./images/pic-thre.png" alt="person">
+      </div>
+      
+      <div class="corusel__item position-relative">
+        <p class="corusel__text mb-3 text-center">
+          “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+        </p>
+        <span class="corusel__span text-center d-block">
+          Name and Surname
+        </span>
+        <img class="corusel__img text-center" src="./images/pic-four.png" alt="person">
+      </div>
+      
+    </div>
+    
+     
+    
+    
+  </div>
+
+</section> 
+
+<!-- buy -->
+<section class="buy">
+  <div class="container">
+    <div class="buy__top mb-4">
+      <div class="container ">
+        <div class="d-flex justify-content-between align-items-center">
+          <strong class="carousel__title">
+            Section Headline
+          </strong>
+          
+          <div class="btn-group dropend">
+            <button type="button" class="btn  dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+              Button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row down-card pt-2 pt-sm-3 pt-md-4 pt-lg-5">
+          <div class="col d-flex justify-content-center justify-content-sm-between flex-wrap ">
+            
+            <div class="mini-card   ms-sm-0 ms-0   mb-2 mb-sm-2 ">
+              <div class="card h-100" style="width: 18rem;">
+                <div class="p-2">
+                  <img src="https://picsum.photos/id/344/200/130" class="card-img-top " alt="...">
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Product Title</h5>
+                  <p class="card-text">Space for a small product description </p>
+                  <div class="card__wrap d-flex  align-items-center justify-content-between">
+                    <span class="card__price fw-bold">
+                      1.48 USD
+                    </span>
+                    <button type="button" class="btn btn-success card__button">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mini-card  ms-sm-0 ms-0   mb-2 mb-sm-2 ">
+              <div class="card h-100" style="width: 18rem;">
+                <div class="p-2">
+                  <img src="https://picsum.photos/id/345/200/130" class="card-img-top " alt="...">
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Product Title</h5>
+                  <p class="card-text">Space for a small product description </p>
+                  <div class="card__wrap d-flex  align-items-center justify-content-between">
+                    <span class="card__price fw-bold">
+                      1.48 USD
+                    </span>
+                    <button type="button" class="btn btn-success card__button">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mini-card  ms-sm-0 mb-2 mb-sm-2 ">
+              <div class="card h-100" style="width: 18rem;">
+                <div class="p-2 position-relative">
+                  <img src="https://picsum.photos/id/347/200/130" class="card-img-top " alt="...">
+                  <span class="img__text">- 36 %</span>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Product Title</h5>
+                  <p class="card-text">Space for a small product description </p>
+                  <div class="card__wrap d-flex  align-items-center justify-content-between">
+                    <span class="card__price fw-bold">
+                      0.28 USD
+                      <span class="card__plus">48.56</span>
+                    </span>
+                    <button type="button" class="btn btn-success card__button">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mini-card  ms-sm-0 ms-0   mb-2 mb-sm-2 ">
+              <div class="card h-100" style="width: 18rem;">
+                <div class="p-2">
+                  <img src="https://picsum.photos/id/349/200/130" class="card-img-top " alt="...">
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title">Product Title</h5>
+                  <p class="card-text">Space for a small product description </p>
+                  <div class="card__wrap d-flex  align-items-center justify-content-between">
+                    <span class="card__price fw-bold">
+                      1.48 USD
+                    </span>
+                    <button type="button" class="btn btn-success card__button">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Posts -->
+
+<section class="posts pt-3 pt-lg-5 pb-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center ">
+      <strong class="carousel__title">
+        Read our Blog posts
+      </strong>
+      
+      <div class="btn-group dropend">
+        <button type="button" class="btn  dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+          Go to Blog
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Action two</a></li>
+          <li><a class="dropdown-item" href="#">Action three</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row mt-4">
+      <div class="col-12 col-lg-4  post-one mb-3">
+        <div>
+          <span class="img__info">
+            Dinner tips
+          </span>
+        </div>
+        
+        <p class="post-one__text mt-auto mb-1">
+          Our chef tips for a great and tasty dinner ready in 20 minutes
+        </p>
+        
+        <div class="detal">
+          <img class="me-2" src="./images/man.png" alt="man">
+          <span class="detal__title me-2">Author</span>
+          <time class="detal__title" datetime="2022-08-28">17. 6. 2020</time>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 ms-0 ms-lg-3 ms-xl-5 mb-5">
+        <div class="picture-min">
+          <img src="./images/post-min-bg.png" alt="frunt">
+        </div>
+        <span class="frunt__info ">
+          Vegetable
+        </span>
+        
+        <p class="frunt__text">
+          Which vegetable your family will love and want’s eat each day
+        </p>
+        
+        <span class="frunt__title me-2">Author</span>
+        <time class="frunt__title" datetime="2022-08-28">15. 6. 2020</time>
+        
+      </div>
+      
+      <div class="col-12 col-md-6 col-lg-3 col-xl-4 w-xl-100">
+        <div class="last d-flex justify-content-between align-items-center mb-4">
+          <div class="lat__info">
+            <p class="last__text">
+              Salat is kinda good start to your morning routines
+            </p>
+            <span class="frunt__title me-2">Author</span>
+            <time class="frunt__title" datetime="2022-08-28">15. 6. 2020</time>
+          </div>
+          <div class="last__pic">
+            <img class="last__img" src="https://picsum.photos/id/334/96/96">
+          </div>
+        </div>
+
+        <div class="last d-flex justify-content-between align-items-center mb-4">
+          <div class="lat__info">
+            <p class="last__text">
+              Salat is kinda good start to your morning routines
+            </p>
+            <span class="frunt__title me-2">Author</span>
+            <time class="frunt__title" datetime="2022-08-28">15. 6. 2020</time>
+          </div>
+          <div class="last__pic">
+            <img class="last__img" src="https://picsum.photos/id/201/96/96">
+          </div>
+        </div>
+
+        <div class="last d-flex justify-content-between align-items-center mb-4">
+          <div class="lat__info">
+            <p class="last__text">
+              Salat is kinda good start to your morning routines
+            </p>
+            <span class="frunt__title me-2">Author</span>
+            <time class="frunt__title" datetime="2022-08-28">15. 6. 2020</time>
+          </div>
+          <div class="last__pic">
+            <img class="last__img" src="https://picsum.photos/id/231/96/96">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+<!-- Home information -->
+<section class="information pt-4 pb-5">
+
+  <div class="container">
+
+    <div class="information__inner row ">
+
+      <div class="information__wrap col-12 col-sm-6 col-lg-3 text-center text-sm-start">
+        <strong class="information__title ">
+          Get in touch
+        </strong>
+        <ul class="information__list list-unstyled text-center text-sm-start">
+          <li class="information__item">
+            <a class="information__link" href="#">
+              About Us
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Careers
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Press Releases
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="information__wrap col-12 col-sm-6 col-lg-3 text-center text-sm-start">
+        <strong class="information__title">
+          Connections
+        </strong>
+        <ul class="information__list list-unstyled">
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Facebook
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Twitter
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Instagram
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Youtube
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="information__wrap col-12 col-sm-6 col-lg-3 text-center text-sm-start">
+        <strong class="information__title">
+          Earnings
+        </strong>
+        <ul class="information__list list-unstyled">
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Become an Affiliate
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Advertise your product
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Sell on Market
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="information__wrap col-12 col-sm-6 col-lg-3 text-center text-sm-start">
+        <strong class="information__title">
+          Account
+        </strong>
+        <ul class="information__list list-unstyled">
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Your account
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Returns Centre
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              100 % purchase protection
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Chat with us
+            </a>
+          </li>
+
+          <li class="information__item">
+            <a class="information__link" href="#">
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+</main>
+
+<!-- Footer -->
+
+<footer class="footer pt-4">
+  <div class="container">
+  <strong class="footer__title">
+    Product tags
+  </strong>
+  <ul class="footer__list list-unstyled d-flex flex-wrap mb-5">
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Beans
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Carrots
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Apples
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Garlic
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Mushrooms
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Tomatoes
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Chilli peppers
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Broccoli
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Watermelons
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Oranges
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Bananas
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Grapes
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Cherries
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Meat
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Seo tag
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Fish
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Seo tag
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Fresh food
+      </a>
+    </li>
+    <li class="footer__item">
+      <a class="footer__link" href="#">
+        Lemons
+      </a>
+    </li>
+  </ul>
+  <p class="footer__epic">
+    Copyright © 2020 petrbilek.com
+  </p>
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

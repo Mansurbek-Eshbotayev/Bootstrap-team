@@ -2201,15 +2201,6 @@ td {
     font-size: 10px;
   }
 }
-
-.containerz {
-  width: 100% !important;
-  max-width: 1210px !important;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
 .p-title-p-hero-box-grid-intro {
   display: flex;
   justify-content: space-between;
@@ -3059,6 +3050,12 @@ td {
   .p-title-p-second-hero-title {
     font-size: 24px;
   }
+}
+.containerz {
+  width: 100% !important;
+  max-width: 1210px !important;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .fruit-big-title {

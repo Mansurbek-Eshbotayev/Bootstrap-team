@@ -2346,7 +2346,7 @@ td {
 }
 
 .form-label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 0px;
   font-size: 14px;
@@ -2359,13 +2359,9 @@ td {
 }
 
 [type=radio] {
-
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-
-  appearance: none;
-
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -2509,26 +2505,26 @@ td {
   border-radius: 12px;
 }
 
-.product-list--active {
+.productt-list--active {
   display: block;
 }
 
-.product-item,
-.product-list-item {
+.productt-item,
+.productt-list-item {
   border: 1px solid #D1D1D1;
   border-radius: 12px;
 }
 
-.product-list-item {
+.productt-list-item {
   width: 268px;
   padding: 16px 16px 20px 16px;
 }
 
-.product-box {
+.productt-box {
   padding: 15px 0px 0px 32px;
 }
 
-.product-title {
+.productt-title {
   margin: 0px 0px 4px 0px;
   font-family: "Poppins";
   font-size: 15px;
@@ -2536,7 +2532,7 @@ td {
   font-weight: 500;
 }
 
-.product-text {
+.productt-text {
   margin: 0px 0px 12px 0px;
   font-size: 12px;
   line-height: 16px;
@@ -2559,7 +2555,7 @@ td {
   color: #A9A9A9;
 }
 
-.product-boxing-strong {
+.productt-boxing-strong {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 18px;
@@ -2567,23 +2563,19 @@ td {
   color: #151515;
 }
 
-.product-boxing-del {
+.productt-boxing-del {
   display: inline-block;
   margin-bottom: 16px;
   font-family: "Poppins";
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
-
-  text-decoration-line: line-through;
-
   color: #A9A9A9;
 }
 
-.product-boxing-text {
+.productt-boxing-text {
   margin: 0px;
   font-family: "Poppins";
   font-weight: 600;
@@ -2592,15 +2584,15 @@ td {
   color: #A9A9A9;
 }
 
-.product-boxing-texted {
+.productt-boxing-texted {
   margin-bottom: 26px;
   font-size: 12px;
   line-height: 16px;
   color: #A9A9A9;
 }
 
-.product-boxing-btn,
-.product-boxes-btn {
+.productt-boxing-btn,
+.productt-boxes-btn {
   position: relative;
   display: block;
   margin-bottom: 12px;
@@ -2615,8 +2607,8 @@ td {
   border: 2px solid #46760A;
   border-radius: 12px;
 }
-.product-boxing-btn::after,
-.product-boxes-btn::after {
+.productt-boxing-btn::after,
+.productt-boxes-btn::after {
   position: absolute;
   bottom: 18px;
   right: 20px;
@@ -2627,14 +2619,14 @@ td {
   content: "";
 }
 
-.product-boxes-btn {
+.productt-boxes-btn {
   padding: 7px 12px;
 }
-.product-boxes-btn::after {
+.productt-boxes-btn::after {
   display: none;
 }
 
-.product-boxing-button {
+.productt-boxing-button {
   position: relative;
   padding: 7px 12px 7px 36px;
   font-family: "Poppins";
@@ -2646,7 +2638,7 @@ td {
   border-radius: 12px;
   border-color: transparent;
 }
-.product-boxing-button::before {
+.productt-boxing-button::before {
   position: absolute;
   bottom: 12px;
   left: 15px;
@@ -2657,15 +2649,15 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
-  .product-list {
+  .productt-list {
     display: block;
   }
-  .product-list-item {
+  .productt-list-item {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .product-img-box {
+  .productt-img-box {
     display: none;
   }
   .form-label {
